@@ -45,3 +45,6 @@
   console.warn("Warn Info");      
   console.error("Error Info");  
 
+## sting to int
+  parseInt(sting)
+
