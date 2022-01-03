@@ -48,3 +48,12 @@
 ## sting to int
   parseInt(sting)
 
+## Check object
+  if (
+    typeof yourVariable === 'object' &&
+    !Array.isArray(yourVariable) &&
+    yourVariable !== null
+) {
+    executeSomeCode();
+}
+
