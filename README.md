@@ -59,4 +59,15 @@
 
 ## Don't use eval function
 
+you can use other functions instead of eval function.
 
+var key = 'a';
+using eval
+eval('a') = 1;
+using window
+window[key] = 1;
+
+var tiger = {}
+tiger['age'] = 2;
+var age_key = 'age';
+tiger[age_key] = 2;
