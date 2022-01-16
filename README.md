@@ -87,3 +87,8 @@ tiger[age_key] = 2;
         old.apply(this, arguments);
     }
 })();
+## setTimeout (run function after 1 second)
+
+setTimeout(function(){
+  ...code
+}, 1000);
