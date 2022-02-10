@@ -92,3 +92,9 @@ tiger[age_key] = 2;
 setTimeout(function(){
   ...code
 }, 1000);
+
+## set defualt parameter value in function
+
+function(param1, param2= default value){}
+
+
