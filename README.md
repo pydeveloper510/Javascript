@@ -9,7 +9,7 @@
     Math.round((0.1 + 0.2) * 10) / 10;
     
 ## Display color log
-
+```
   Reset = "\x1b[0m"
   Bright = "\x1b[1m"
   Dim = "\x1b[2m"
@@ -35,16 +35,16 @@
   BgMagenta = "\x1b[45m"
   BgCyan = "\x1b[46m"
   BgWhite = "\x1b[47m"
-
-  Example: console.log('\u001b[32m\u001b[1m Login user:  %d\u001b[0m ', rows.length);
+```
+  Example: ```console.log('\u001b[32m\u001b[1m Login user:  %d\u001b[0m ', rows.length);```
 
 ## Log type
-
+```
   console.log("Log Info");    
   console.info("Info Info");      
   console.warn("Warn Info");      
   console.error("Error Info");  
-
+```
 ## sting to int
   parseInt(sting)
 
@@ -60,7 +60,7 @@
 ## Don't use eval function
 
 you can use other functions instead of eval function.
-
+```
 var key = 'a';
 using eval
 eval('a') = 1;
@@ -71,9 +71,10 @@ var tiger = {}
 tiger['age'] = 2;
 var age_key = 'age';
 tiger[age_key] = 2;
+```
 
 ## console.log with time
-
+```
 (function() {
     var old = console.log;
     console.log("> Log Date Format DD/MM/YY HH:MM:SS - UTCString");
@@ -87,14 +88,66 @@ tiger[age_key] = 2;
         old.apply(this, arguments);
     }
 })();
+```
 ## setTimeout (run function after 1 second)
-
+```
 setTimeout(function(){
   ...code
 }, 1000);
-
+```
 ## set defualt parameter value in function
-
+```
 function(param1, param2= default value){}
+```
+## current time
 
+```
+1. 현재 날짜 구하기
+
+let today = new Date();
+
+console.log(today);
+
+2. 현재 날짜 년-월-일 포맷으로 구하기
+
+let today = new Date();
+
+ 
+
+// 년도 getFullYear()
+
+let year = today.getFullYear(); 
+
+// 월 getMonth() (0~11로 1월이 0으로 표현되기 때문에 + 1을 해주어야 원하는 월을 구할 수 있다.)
+
+let month = today.getMonth() + 1
+
+// 일 getDate()
+
+let date = today.getDate(); // 일
+
+ 
+
+console.log(year + '-' + month + '-' + date);
+
+3. 현재 시 : 분 : 초 
+
+let today = new Date();
+
+ 
+
+// 시 getHours()
+
+let hours = today.getHours();
+
+// 분 getMinutes()
+
+let minutes = today.getMinutes();
+
+/// 초 getSeconds()
+
+let seconds = today.getSeconds();
+
+console.log(hours + ' : ' + minutes + ' : ' + seconds);
+```
 
