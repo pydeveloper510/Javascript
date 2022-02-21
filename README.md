@@ -45,6 +45,14 @@
   console.warn("Warn Info");      
   console.error("Error Info");  
 ```
+
+## Log with variable
+```
+var cats = 2;
+var dogs = 5;
+console.log('%d cats and %d dogs', cat, dog);
+```
+
 ## sting to int
   parseInt(sting)
 
