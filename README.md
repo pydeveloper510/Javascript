@@ -159,3 +159,6 @@ let seconds = today.getSeconds();
 console.log(hours + ' : ' + minutes + ' : ' + seconds);
 ```
 
+# get full time
+
+
