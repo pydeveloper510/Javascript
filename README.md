@@ -172,4 +172,15 @@ if (confirm('Are you sure you want to save this thing into the database?')) {
   console.log('Thing was not saved to the database.');
 }
 
+# sync async function in for statument
+
+```
+for (var i = 0; i < 10; i++){
+  console.log(i);
+  (function(i){
+    console.log(i);
+  }(i);
+}
+```
+  
 
