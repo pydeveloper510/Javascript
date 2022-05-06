@@ -1,0 +1,29 @@
+// ## 1 ## 
+console.log(y);
+y = 1;
+console.log(y);
+
+console.log(greet('Mark'));
+console.log(hello('Mark'));
+
+function greet(name) {
+    return `Greetings ${name}!`;
+}
+
+var hello = (name) => {
+    return `Hello ${name}!`;
+}
+
+var y
+
+// ## 2 ## Контекст
+
+var obj = {
+    name: "Mark",
+    greet: greet(this.name),  
+    hello: hello(this.name),
+}
+
+console.log(obj.greet);
+console.log(obj.hello);
+
